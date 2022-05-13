@@ -95,7 +95,7 @@ Solution: The hyperlink to the selected organization webpage can be found at the
     <nav>   
         <div id="menu">
             <ul class="menu">
-            <a href="/mewtopia/"><img id="logoup" src="images/logo.png" alt="logo"></a>
+            <a href="/"><img id="logoup" src="images/logo.png" alt="logo"></a>
             <?php foreach ($pages as $url => $page) { ?>
                 <li id="menu" <?=(($page==$find) ? ' class="active"' :'')?>>
                 <a href="<?=($url =='/') ? '.' : ('?page=' . $url) ?>">
