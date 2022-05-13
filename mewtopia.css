@@ -1,0 +1,320 @@
+/* 5. Apply responsive design techniques with Bootstrap framework 
+solution: I applied responsive design techniques, but without using Bootstrap.
+Without attempting to be comprehensive:
+
+mewtopia.css
+e.g.: At line: 107-133, 171-174, 277-280, 295-318
+
+
+
+*/
+
+
+body{   
+    background-color: #ffffff ;
+    background-attachment: fixed;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #bb5419;
+}
+
+h1{font-size: 32px;}
+
+h2{size: 30px;}
+
+article{
+    width: 80%;
+    text-align: justify;
+    display: block;
+    margin: 0 auto; 
+    
+}
+
+li {display:flexbox; text-decoration: none; }
+
+a {color: #3a1b08;}
+
+/*Contact*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #EC7029;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    
+   
+  }
+  label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #bb5419;
+  }
+  
+  button[type=button]:hover {
+    background-color: #bb5419;
+  }
+
+  button[type=button] {
+    background-color: #EC7029;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  
+    
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffdcc7;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit], button[type=button]  {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/*Contact end*/
+
+
+/* Top Menu */
+
+img#logoup{
+    height: 60px; 
+    margin-top: 5px;
+    margin-left: 15px;
+    
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffdcc7;
+    top: 0;
+    width: 100%;
+}
+
+ul.menu li {float: right; }
+
+ul.menu li a {
+    display: block;
+    color: #bb5419;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;  
+}
+
+ul.menu li a:hover:not(.active) {background-color: #fdc9aa;}
+
+ul.menu li a.active {background-color: #bb5419;}
+  
+ul.menu li.right {float: right;}
+  
+@media screen and (max-width: 600px) {
+    ul.menu li.right, 
+    ul.menu li {float: none;}
+}
+
+
+/* Menüsor/fejléc vége*/
+
+/*Footer*/
+
+footer{    
+    position: fixed;
+    bottom:0px;
+    height: 150px;
+    width: 100%;
+    background-color: #ffdcc7;
+    color: #ffdcc7;
+
+}
+div#ft_div{
+    text-align: left;
+    width:fit-content;
+	  margin: 0 auto;
+}
+li#ft_li1{
+    
+    list-style-type: none;
+    overflow: hidden;
+    font-variant: small-caps;
+    float: right;
+}
+
+a#scrollup {  
+   position: fixed;
+   bottom: 52px;
+   right: 100px;
+ }
+img#fel{
+    width: 35px;
+    height: 35px;
+}   
+form#form_s{
+    float:right;
+}
+
+img#logo{
+    height: 120px; 
+    margin-top: 10px;
+    
+    
+}
+/*Footer end*/
+
+/*Center*/
+img.center{
+    display: block;
+    margin: 0 auto;
+}
+h1.center{
+    text-align: center;
+}
+h2.center{
+    text-align: center;
+}
+
+h3.center{
+    text-align: center;
+}
+div.center{
+  text-align: center;
+}
+
+section.center{
+  display: block;
+  text-align: center;
+
+}
+
+
+
+/* Help Us menu */
+
+ul.menu2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffdcc7;
+    top: 0;
+    width: 100%;
+    
+
+}
+
+ul.menu2 li {float: left; }
+
+ul.menu2 li a {
+    display: block;
+    color: #bb5419;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;   
+}
+
+ul.menu2 li a:hover:not(.active) {background-color: #fdc9aa;}
+
+@media screen and (max-width: 600px) {
+    ul.menu2 li.right, 
+    ul.menu2 li {float: none;}
+}
+
+/* Help Us menu end */
+
+/*Gallery*/
+  
+  div.gallery img {
+    width: 300px;
+    max-height: 250px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Gallery end*/
